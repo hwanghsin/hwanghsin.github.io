@@ -1,0 +1,31 @@
+.dashboard-content {
+  background: #fff;
+  width: calc(100vw - 256px); /* 配合左側選單寬度 */
+  transition: width 0.3s ease-in-out;
+}
+.dashboard-content.full {
+  width: 100vw;
+}
+.dashboard-content.extend {
+  width: calc(100vw - 16px);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 0 16px;
+}
+.dashboard-header > .fa-bars {
+  cursor: pointer;
+}
+.dashboard-breadcrumb {
+  width: 100%;
+  height: 48px;
+}
+.dashboard-detail {
+  width: 100%;
+  height: calc(100vh - 64px - 48px);
+  background: #ddd;
+}

@@ -1,0 +1,87 @@
+/* Blog */
+.blog-content {
+    height: calc(100vh - 56px);
+}
+.blog-container { display: flex; }
+.blog-side {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-height: calc(100vh - 56px);
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+.blog-side > ul {
+    width: 300px;
+}
+.blog-side > .author-list {
+    position: absolute;
+    width: 50px;
+    max-height: 100%;
+    top: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.blog-item, .type-item {
+    width: 300px;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: smaller;
+}
+.blog-item > .title {
+    width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.blog-content { flex: 4; }
+
+#editor {
+    height: 45vh;
+    overflow-y: scroll;
+}
+
+.delete-icon {
+    float: right;
+    cursor: pointer;
+    color: red;
+    margin: 3px 5px;
+    display: none;
+}
+.delete-icon:hover { color: pink; }
+
+.get-id-icon {
+    float: right;
+    cursor: pointer;
+    color: #ddd;
+    margin: 3px 5px;
+    display: none;
+}
+.get-id-icon:hover { color: #fff; }
+
+.verse-content {
+    width: 0;
+    max-height: calc(100vh - 56px);
+    margin-top: 56px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    transition: all .3s ease-in-out;
+    color: #eee;
+    font-size: .75em;
+}
+.verse-content.extended {
+    width: 300px;
+    padding: 1rem;
+}
+.verse-content.extended .times {
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.blog-content .ql-toolbar.ql-snow {
+    background-color: #fff;
+}

@@ -1,0 +1,15 @@
+.profile-image {
+    width: 150px;
+    height: 150px;
+}
+.avatar {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.camera {
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+}

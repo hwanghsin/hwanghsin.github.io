@@ -1,0 +1,12 @@
+.main-content header {
+    height: 50px;
+}
+.back-click {
+    left: 10px;
+}
+.add-click {
+    right: 10px;
+}
+.main-content main {
+    height: 70vh;
+}

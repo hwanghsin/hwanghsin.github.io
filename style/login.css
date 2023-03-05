@@ -1,0 +1,68 @@
+/* Login START */
+.login-bg {
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/images/signin-background.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #login-container {
+    width: 450px;
+    height: 330px;
+    background-color: #00796b;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  #login-container h4 {
+    font-family: "Cairo", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  #login-container hr {
+    margin-top: 15px;
+    margin-bottom: 2.7rem;
+    width: 250px;
+    border-color: #ffffff;
+  }
+  #login-container .input-group {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #login-container .input-group span {
+    background-color: #004c40;
+    color: #ffffff;
+    border-color: #004c40;
+    border-radius: 10px 0px 0px 10px;
+  }
+  #login-container .input-group input {
+    border: 1px solid #00796b;
+    border-radius: 0px 10px 10px 0px;
+    font-family: "Cairo", sans-serif;
+  }
+  #login-container .input-group input:focus {
+    box-shadow: none;
+    border: 1px solid #00796b;
+  }
+  .btn-customized {
+    background-color: #004c40;
+    margin-top: 30px;
+    color: #ffffff;
+    border-color: #004c40;
+    font-family: "Cairo", sans-serif;
+    border-radius: 10px;
+  }
+  .btn-customized:hover,
+  .btn-customized:focus,
+  .btn-customized:active {
+    color: #ffffff;
+    border-color: #004c40;
+  }
+  /* Login END */

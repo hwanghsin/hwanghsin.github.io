@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>黃信的後台 - 個人資料</title>
@@ -18,60 +18,25 @@
     <script src="/script/constants.js"></script>
     <script src="/script/auth.js"></script>
     <script src="/script/helpers.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6FZPYVXH6X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6FZPYVXH6X");
+    </script>
   </head>
   <body>
     <div class="loading"></div>
     <div class="loaded disappear">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">HWANG</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navigation"
-            aria-controls="navigation"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">文章庫</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="prayer.html">禱告清單</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  設定
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <span class="dropdown-item" id="your-kname"></span>
-                  <a class="dropdown-item" href="#">個人資料</a>
-                  <a class="dropdown-item" href="type.html">管理分類</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" id="signout-btn" href="#">登出</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"></nav>
       <div class="main-content d-flex justify-content-center">
         <form class="border px-5 py-3 bg-light my-3 overflow-auto">
           <h5 class="text-secondary">個人資料</h5>
@@ -81,7 +46,7 @@
               <img
                 alt="avatar"
                 class="position-absolute avatar"
-                src="./assets/images/blank-profile.png"
+                src="./images/blank-profile.png"
                 width="150"
                 height="150"
               />
@@ -166,7 +131,7 @@
     >
       <div class="toast-header">
         <img
-          src="./assets/images/favicon.ico"
+          src="./images/favicon.ico"
           width="20"
           height="20"
           class="rounded mr-2"
@@ -185,7 +150,7 @@
       <div class="toast-body" id="toast-message"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script/profile.js"></script>
   </body>
 </html>

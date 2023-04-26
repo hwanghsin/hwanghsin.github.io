@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../assets/images/main-background.jpg") no-repeat center
-    center fixed;
+  background: url("https://firebasestorage.googleapis.com/v0/b/hwanghsin-site.appspot.com/o/boulder.JPG?alt=media&token=c9e8b61c-57a3-478f-878e-a12702bc10e0")
+    no-repeat center center fixed;
   background-size: cover;
 }
 .disappear {
@@ -15,8 +15,8 @@ body {
   display: none;
 }
 .loading {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #13bf98;
   border-radius: 50%;
   width: 100px;
   height: 100px;

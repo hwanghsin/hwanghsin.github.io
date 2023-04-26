@@ -1,4 +1,5 @@
 const url = "https://hwanghsin-api.cyclic.app";
+// const url = "http://localhost:3001";
 const SUCCESS = "SUCCESS";
 const FAILED = "FAILED";
 const INTERNAL = "INTERNAL";
@@ -80,4 +81,14 @@ const BIBLE_VERSES = [
   { name: "猶大書", code: "猶", covenant: "new" },
   // 啟示
   { name: "啟示錄", code: "啟", covenant: "new" },
+];
+const NAVIGATIONS = [
+  { name: "文章庫", link: "blog.html" },
+  { name: "代禱事項", link: "prayer.html" },
+  { name: "記帳", link: "keep.html" },
+];
+const KEEP_TABS = [
+  { id: "form", name: "記帳表單" },
+  { id: "keep-type", name: "記帳類別" },
+  { id: "payment-type", name: "付款方式" },
 ];

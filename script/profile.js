@@ -8,7 +8,7 @@ $(document).ready(async () => {
   }
   // 初始
   // 載入導覽列
-  await loadNavigation();
+  loadOldNavigation();
   const user = await fetchMyInfo(token);
   if (user) $("#your-kname").text(`歡迎！${user.kname}`);
   handleLLoadData(user);

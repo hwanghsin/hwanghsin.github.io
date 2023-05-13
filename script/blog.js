@@ -40,7 +40,7 @@ $(document).ready(async function () {
   }
 
   // 載入導覽列
-  await loadNavigation();
+  loadOldNavigation();
 
   // 初始化編輯器
   var quill = new Quill("#editor", options);

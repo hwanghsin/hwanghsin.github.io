@@ -2,14 +2,14 @@
 .login-bg {
   width: 100vw;
   height: 100vh;
-  background: url("https://firebasestorage.googleapis.com/v0/b/hwanghsin-site.appspot.com/o/Garden_Chrischurch.JPG?alt=media&token=664f4d8a-3caf-4685-aac2-0d3304568ad1")
-    no-repeat center;
+  background: url("../images/Login_bg.jpg") no-repeat center;
   background-size: cover;
 }
 #login-container {
   width: 450px;
   height: 330px;
   background-color: #00796b;
+  opacity: 0.8;
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -17,6 +17,9 @@
   bottom: 0;
   left: 0;
   margin: auto;
+}
+#login-container:hover {
+  opacity: 1;
 }
 #login-container h4 {
   font-family: "Cairo", sans-serif;

@@ -72,9 +72,25 @@ const insertModal = () => {
           <div class="modal-body"></div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-            <button class="btn btn-success" id="submit"></button>
+            <button class="btn" id="submit"></button>
+            <div class="d-none" id="type-label" name=""></div>
           </div>
         </div>
+      </div>
+    </div>
+  `);
+};
+
+const insertToast = () => {
+  $("body").append(`
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050">
+      <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="./images/me.jpg" class="rounded me-2" width="20" height="20" />
+          <strong class="me-auto"></strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body"></div>
       </div>
     </div>
   `);

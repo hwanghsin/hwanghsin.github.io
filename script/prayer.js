@@ -12,7 +12,7 @@ $(document).ready(async function () {
     return (window.location.pathname = "login.html");
   }
   // 載入導覽列
-  await loadNavigation();
+  loadOldNavigation();
   const user = await fetchMyInfo(token);
   allList = await fetchPrayers(token);
   list = allList.filter((item) => !item.parent);

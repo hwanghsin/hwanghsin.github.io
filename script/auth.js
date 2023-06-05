@@ -1,4 +1,4 @@
-// Methods
+// API
 async function authenticate(token) {
   if (!token) return null;
   const options = {
@@ -29,6 +29,17 @@ async function fetchMyInfo(token) {
     default:
       return null;
   }
+}
+
+async function validateId() {
+  const id = fetchUserIdByQueryString();
+  if (!id) return false;
+  const options = {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  };
+  const res = await (await fetch(`${url}/api/users/${id}`, options)).json();
+  return res.code === SUCCESS;
 }
 
 function loadOldNavigation() {

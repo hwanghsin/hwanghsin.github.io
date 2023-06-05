@@ -1,12 +1,16 @@
 $(document).ready(async function () {
+  const allowAccess = validateId();
   const token = fetchToken();
-  const res = await authenticate(token);
-  if (!token || !res || res.code == FAILED)
-    return (window.location.pathname = "login.html");
+  if (allowAccess) {
+    loadTabOptions(allowAccess);
+  } else if (token) {
+    const res = await authenticate(token);
+    res.code == FAILED && (window.location.pathname = "login.html");
+    loadTabOptions();
+  }
 
   // 載入導覽列
   loadNavigation();
-  loadTabOptions();
   insertModal();
   insertToast();
 
@@ -127,11 +131,13 @@ function removeModalStyle() {
   $("#type-label").attr("name", "");
 }
 
-function loadTabOptions() {
+function loadTabOptions(allowAccess) {
   // tabs
   $("#keep-tabs").append(
-    KEEP_TABS.map((keep, index) => {
-      return `
+    allowAccess
+      ? ""
+      : KEEP_TABS.map((keep, index) => {
+          return `
         <li class="nav-item" role="presentation">
             <button
             class="nav-link${index === 0 ? " show active" : ""}"
@@ -147,11 +153,12 @@ function loadTabOptions() {
             </button>
         </li>
         `;
-    }).join("")
+        }).join("")
   );
   // contents
   $("#keep-tabs-content").append(
     KEEP_TABS.map((keep, index) => {
+      if (allowAccess && index > 0) return "";
       return `
         <div
             class="tab-pane fade${index === 0 ? " show active" : ""}"

@@ -60,6 +60,11 @@ const clearToken = () => {
   return (window.location.pathname = "login.html");
 };
 
+const fetchUserIdByQueryString = () => {
+  const queryStr = new URLSearchParams(window.location.search);
+  return queryStr.get("user_id");
+};
+
 const insertModal = () => {
   $("body").append(`
     <div class="modal fade" id="confirmation" aria-hidden="true" aria-labelledby="confirmationLabel" tabindex="-1">

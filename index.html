@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hsin Hwang</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,user-scalable=no"
-    />
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黃信(Hsin Hwang)</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="style/resume.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -30,197 +21,140 @@
       gtag("config", "G-6FZPYVXH6X");
     </script>
   </head>
-  <body class="is-preload">
-    <div id="wrapper">
-      <header id="header">
-        <div class="logo"><img src="/images/me.jpg" alt="profile" /></div>
-        <div class="content">
-          <div class="inner">
-            <h1>Hsin Hwang</h1>
-            <p>
-              Five-year Web development experience. Three years experienced of
-              Operation and Product Management in Internet related technology
-              industry. Five months intern in analysis. Highly skilled
-              professional in Operation and Product Management. Passionate in
-              programming, knowledgable and experienced in web font-end (HTML,
-              CSS, Javascript), Node js and C#.
-            </p>
+  <body>
+    <div class="bg">
+      <div class="wrapper">
+        <aside class="sidemenu">
+          <img class="profile" src="assets/images/me.jpg" />
+          <p class="profile-desc">聯絡方式：tedhwang8@hotmail.com</p>
+          <div class="social-platform">
+            <a
+              class="icon-wrapper"
+              href="https://github.com/hwanghsin?tab=repositories"
+              target="_blank"
+            >
+              <img src="assets/images/github.png" />
+            </a>
+            <a
+              class="icon-wrapper"
+              href="https://codepen.io/hwanghsin"
+              target="_blank"
+            >
+              <img src="assets/images/codepen.png" />
+            </a>
           </div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">Projects</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div id="main">
-        <article id="intro">
-          <h2 class="major">Personal Information</h2>
-          <div>Name: Hsin Hwang</div>
-          <div>Email: tedhwang8@hotmail.com</div>
-          <br />
-          <h2 class="major">Education</h2>
-          <div>The George Washington University</div>
-          <div>Class of 2012</div>
-          <div>Double major in Computer Science and History</div>
-        </article>
-        <article id="work">
-          <h2 class="major">Overview</h2>
-          <div>Web Developer 2016/08-Present</div>
-          <div>Technical Support Specialist 2013/07-2016/08</div>
-          <div>Financial Analyst 2013/01-2013/05</div>
-          <hr />
-          <h2 class="major">Experience</h2>
-          <div>Fontend Web Developer at MITAKE Corp. 2019/12-Present</div>
-          <div>Full Stack Web Developer at Sunix Corp. 2019/02-2019/10</div>
-          <div>Full Stack Web Developer at 9th Floor Corp. 2017/01-2018/06</div>
-          <div>Technical Support Specialist 2013/07-2016/08</div>
-        </article>
-        <article id="about">
-          <h2 class="major">Projects</h2>
-          <div class="card bg-secondary mb-3">
-            <div class="card-body">
-              <h3 class="card-title">Sunix EAZIWork</h3>
-              <p class="card-text">
-                An Internet of Things solution consists of manufacture module,
-                mobile app module, dashboard module, data analysis module, and
-                ERP concatenate module.
-              </p>
-              <p class="card-text">
-                I am responsible for the manufacture module and its business
-                logic as well as the mobile app module.
-              </p>
-              <a
-                href="https://www.sunix.com/tw/eazicart.php"
-                target="_blank"
-                class="btn btn-primary"
-                >Learn More</a
-              >
-            </div>
+          <div class="menu-options">
+            <div class="option active" id="about-btn">關於我</div>
+            <div class="option" id="exp-btn">學經歷</div>
+            <div class="option" id="proj-btn">參與專案</div>
           </div>
-          <div class="card bg-secondary mb-3">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/hwanghsin-site.appspot.com/o/project%2Fss.png?alt=media&token=49c48881-1a69-4603-be68-b2086b2648dd"
-                  class="card-img"
-                  alt="ss"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Shrimp Shell Hotel</h3>
-                  <p class="card-text">
-                    An hospitality system consists of booking, customer
-                    management, events management, rating system, and vendor
-                    instant response mechanism.
-                  </p>
-                  <p class="card-text">
-                    As a project leader/manager, I have to be responsible for
-                    the project infrastructure as well as supervising the
-                    progress, making sure our members’ assignment is done at the
-                    deadline.
-                  </p>
-                </div>
+        </aside>
+        <main class="content">
+          <div class="page center" id="about">
+            <div class="overview">
+              <h1>黃信</h1>
+              <h2>軟體工程師</h2>
+              <p>
+                2016年開始從事網頁程式開發並參與各樣前後端程式開發<br />
+                對於軟體開發與新技術有高度興趣<br />
+                詳細請參考"參與專案"
+              </p>
+              <div class="center pointer">
+                <img src="assets/images/arrow-down-circle.svg" id="to-exp" />
               </div>
             </div>
           </div>
-          <div class="card bg-secondary mb-3">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/hwanghsin-site.appspot.com/o/project%2Fchatshier.png?alt=media&token=0fc1400e-73d2-412b-a9bd-3dfed1dcba23"
-                  class="card-img"
-                  alt="chathier"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Chatshier</h3>
-                  <p class="card-text">
-                    An integrated chat app featured a customer management
-                    system. Users may chat on both Line@ and Facebook Messenger
-                    on the same platform, save time and cost for customer
-                    management, and send broadcast messages customers may be
-                    interested. Chatshier also offer task management and data
-                    analysis for users to track on customer preference.
-                  </p>
-                  <p class="card-text">
-                    In this project, I am responsible for designing the system
-                    framework and user interface, developing API, maintaining
-                    the system.
-                  </p>
-                  <a
-                    href="https://www.chatshier.com/"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-secondary mb-3">
-            <div class="card-body">
-              <h3 class="card-title">Internal Ticketing System</h3>
-              <p class="card-text">
-                An Internal ticketing system that records customers’ responses.
-                Technical agents will check it for synchronizing information and
-                support what customers desired.
+          <div class="page justify-center" id="experience">
+            <div class="article-set">
+              <h2>學歷</h2>
+              <p>
+                The George Washington University<br />Class of 2012<br />雙主修:
+                資訊工程/歷史 (Computer Science & History)
               </p>
-              <p class="card-test">
-                I am responsible for the web framework as well as consulting
-                User Experience Protection agents on optimize the system.
+            </div>
+            <!-- <div class="article-set">
+              <h2>簡歷</h2>
+              <p>
+                網頁前端工程師 2016/08-<br />
+                英語技術支援專員 2013/07-2016/08<br />
+                金融分析員(實習) 2013/01-2013/05
+              </p>
+            </div> -->
+            <div class="article-set">
+              <h2>工作經歷</h2>
+              <p>
+                網頁前端工程師 三竹資訊股份有限公司 2019/12-<br />
+                <ul>
+                  <li>負責建構、撰寫、維護後台系統</li>
+                  <li>負責維護產品官網</li>
+                  <li>協助撰寫桌機平台功能</li>
+                </ul>
+              </p>
+              <p>
+                軟體工程師 三泰科技股份有限公司 2019/02-2019/10<br />
+                <ul>
+                  <li>負責撰寫網頁平台功能</li>
+                  <li>APP專案架構建置</li>
+                  <li>工廠伺服器建置</li>
+                </ul>
+              </p>
+              <p>
+                網頁全端工程師 九樓壹號科技有限公司 2017/01-2018/06<br />
+                <ul>
+                  <li>負責建構專案架構，包含前後端程式</li>
+                </ul>
+              </p>
+              <p>
+                英語技術支援專員 TutorABC 2013/07-2016/08<br />
+                <ul>
+                  <li>提供顧問技術上的建議/幫助，提昇顧問完課率</li>
+                  <li>幫助規劃KPI數據化標準，提昇專員工作效率</li>
+                  <li>幫助南非服務中心(Call Center)建置及維護其網路品質</li>
+                </ul>
               </p>
             </div>
           </div>
-        </article>
-        <article id="contact">
-          <h2 class="major">Contact</h2>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field half">
-                <label for="name">Name</label> <input name="name" id="name" />
-              </div>
-              <div class="field half">
-                <label for="email">Email</label>
-                <input name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
+          <div class="page justify-center" id="projects">
+            <div class="article-set">
+              <h2>參與專案</h2>
             </div>
-            <ul class="actions">
-              <li>
-                <input type="submit" value="Send Message" class="primary" />
-              </li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
-          <ul class="icons">
-            <li>
-              <a
-                href="https://github.com/hwanghsin"
-                target="_blank"
-                class="icon brands fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-          </ul>
-        </article>
+            <div class="article-set">
+              <h2>CoLine</h2>
+              <p>
+                一個以資安為重， 即時傳達為先的雲端多元即時通訊方案<br />
+                相關資訊：<a href="https://coline.mitake.com.tw/">CoLine</a><br />
+                後台系統：<a href="https://eim.mitake.com.tw/jwebadm/login.jsp">CoLine後台</a>
+              </p>
+            </div>
+            <div class="article-set">
+              <h2>EAZIMES (原名：EaziWork)</h2>
+              <p>
+                智慧製造解決方案<br />
+                提供即時數據，生產品質、產能優化分析。<br/>
+                相關資訊：<a href="https://www.sunix.com/tw/eazicart.php">EAZIMES</a>
+              </p>
+            </div>
+            <div class="article-set">
+              <h2>錢掌櫃(Chatshier) - 已下架</h2>
+              <p>
+                一個聊天整合軟體，整合當下熱門聊天軟體如Line、Facebook
+                Messenger<br />
+                聊天功能之外還包含推播訊息、客戶建檔功能(CMS)與資料分析
+                不需要為切換多套系統而煩惱<br />
+              </p>
+            </div>
+            <div class="article-set">
+              <h2>來單系統</h2>
+              <p>
+                部門長期以來都使用excel紀錄客戶需求，經常出現檔案鎖住等無法使用的情況<br />
+                此系統為部門提高工作效率，資料填寫得以同步
+              </p>
+            </div>
+          </div>
+        </main>
       </div>
-      <footer id="footer"></footer>
     </div>
-    <div id="bg"></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/util.js"></script>
+
+    <script src="scripts/resume.js"></script>
   </body>
 </html>

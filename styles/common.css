@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.justify-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

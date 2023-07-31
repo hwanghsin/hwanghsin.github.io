@@ -1,0 +1,57 @@
+body {
+  background: url('../assets/images/Login_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: animatebottom 1s;
+  animation: animatebottom 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.container > img:first-child {
+  top: 12px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#timestamp {
+  text-align: right;
+  padding-right: 15px;
+}
+
+#editor {
+  margin-bottom: 20px;
+}
+
+#editor > * {
+  font-size: 24px;
+}
+
+.light-bg {
+  background: rgba(255,255,255,0.8);
+}
